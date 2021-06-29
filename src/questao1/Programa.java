@@ -11,11 +11,11 @@ public class Programa {
 
         Caixa caixa = new Caixa();
 
-        System.out.printf("%.2f%n", caixa.calculaValorFinal(banana, 3));
-        System.out.printf("%.2f%n", caixa.calculaValorFinal(energetico, 7));
-        System.out.printf("%.2f%n", caixa.calculaValorFinal(arroz, 1));
-        System.out.printf("%.2f%n", caixa.calculaValorFinal(chocolate, 12));
-        System.out.printf("%.2f%n", caixa.calculaValorFinal(leite, 5));
-        System.out.printf("%.2f%n", caixa.calculaValorFinal(abacaxi, 1));
+        System.out.printf("R$%.2f%n", caixa.calculaValorFinal(banana, 3));
+        System.out.printf("R$%.2f%n", caixa.calculaValorFinal(energetico, 7));
+        System.out.printf("R$%.2f%n", caixa.calculaValorFinal(arroz, 1));
+        System.out.printf("R$%.2f%n", caixa.calculaValorFinal(chocolate, 12));
+        System.out.printf("R$%.2f%n", caixa.calculaValorFinal(leite, 5));
+        System.out.printf("R$%.2f%n", caixa.calculaValorFinal(abacaxi, 1));
     }
 }

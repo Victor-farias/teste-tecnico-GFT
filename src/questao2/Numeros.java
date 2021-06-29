@@ -12,6 +12,7 @@ public class Numeros {
             numeros.add(sc.nextInt());
         }
 
+        //Maior número
         int maiorNumero = 0;
         for (Integer numero : numeros) {
             if (numero > maiorNumero) {
@@ -20,14 +21,17 @@ public class Numeros {
         }
         System.out.println("Maior número: " + maiorNumero);
 
-        System.out.println("Menor número: " + numeros.stream().min(Comparator.comparingInt(Integer::intValue)));
+        //Menor número
+        System.out.println("Menor número(Entre colchetes): " + numeros.stream().min(Comparator.comparingInt(Integer::intValue)));
 
+        //Média
         double soma = 0;
         for (Integer numero : numeros) {
             soma += numero;
         }
         System.out.println("Média: " + soma / 10);
 
+        //Números acima de 10
         int numerosAcimaDez = 0;
         for (Integer numero : numeros) {
             if (numero > 10) {
@@ -36,6 +40,7 @@ public class Numeros {
         }
         System.out.println("Números acima de 10 :" + numerosAcimaDez);
 
+        //Números acima de 50
         int numerosAcimaCinquenta = 0;
         for (Integer numero : numeros) {
             if (numero > 50) {
